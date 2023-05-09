@@ -8,24 +8,20 @@ namespace PlatformerMVC
     public class Main : MonoBehaviour
     {
 
-        [SerializeField] private AnimationConfig _config;
+        [SerializeField] private LevelObjectView _playerView;
+        private AnimationConfig _config;
         private SpriteAnimatorController _playerAnimator;
 
         private void Awake()
         {
             _config = Resources.Load<AnimationConfig>("SpriteAnimatorCfg");
             _playerAnimator = new SpriteAnimatorController(_config);
-            //_playerAnimator
+            _playerAnimator.StartAnimation(_playerView._spriteRenderer, AnimState.Run, true, 10f);
         }
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
+        
         void Update()
         {
-
+            _playerAnimator.Update();
         }
     }
 }
