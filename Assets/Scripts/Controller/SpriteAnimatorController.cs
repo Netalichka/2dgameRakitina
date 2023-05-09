@@ -91,7 +91,7 @@ namespace PlatformerMVC
                 animation.Value.Update();
                 if(animation.Value.Counter < animation.Value.Sprites.Count)
                 {
-                    animation.Key.sprite = animation.Value.Sprites[animation.Value.Counter];
+                    animation.Key.sprite = animation.Value.Sprites[(int)animation.Value.Counter];
                 }
             }
         }
