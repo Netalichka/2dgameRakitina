@@ -12,4 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90361c970372ec2448a564dbd91a144c, type: 3}
   m_Name: SpriteAnimatorCfg
   m_EditorClassIdentifier: 
-  Sequences: []
+  Sequences:
+  - Track: 0
+    Sprites:
+    - {fileID: 702455426, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: -1234237878, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: 945694413, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: -991403996, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: -2116127207, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: 242377498, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: 528920479, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: -1442742041, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+    - {fileID: 1714785204, guid: 6bd1c00f5f6ecc746b6e2277f8a7d292, type: 3}
+  - Track: 1
+    Sprites:
+    - {fileID: 720724302, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: 1040205690, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: 599365896, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: 782460150, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: -1131516127, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: -345461477, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: 1483782509, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: -262441389, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: -1051750235, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+    - {fileID: -1566823813, guid: 2b22e58cf7fbd7946b874f61d6cbbebc, type: 3}
+  - Track: 2
+    Sprites:
+    - {fileID: -1102548243, guid: 5d2d7f4ab1e201048be99e1dc5fc3488, type: 3}
