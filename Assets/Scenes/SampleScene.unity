@@ -516,8 +516,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 253676041}
   _spriteRenderer: {fileID: 253676040}
-  _collider: {fileID: 0}
-  _rb: {fileID: 0}
+  _collider: {fileID: 253676044}
+  _rb: {fileID: 253676043}
 --- !u!50 &253676043
 Rigidbody2D:
   serializedVersion: 4
