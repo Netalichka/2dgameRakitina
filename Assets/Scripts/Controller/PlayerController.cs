@@ -27,9 +27,9 @@ namespace PlatformerMVC
         private bool _isMoving;
 
         private float _jumpForce = 9f;
-        private float _jumpTreshold = 1f;
+        private float _jumpTreshold = 0.5f;
         private float _g = -9.8f;
-        private float _groundLevel = 0.5f;
+        private float _groundLevel = -2.45f;
         private float _yVelocity;
 
 
@@ -72,7 +72,7 @@ namespace PlatformerMVC
 
             if (IsGrounded())
             {
-                _playerAnimator.StartAnimation(_playerView._spriteRenderer, isMoving ? AnimState.Run : AnimState.Idle, true, _animationSpeed);
+                _playerAnimator.StartAnimation(_playerView._spriteRenderer, _isMoving ? AnimState.Run : AnimState.Idle, true, _animationSpeed);
                 if (_isJump && _yVelocity <= 0)
                 {
                     _yVelocity = _jumpForce;
@@ -83,6 +83,16 @@ namespace PlatformerMVC
                     _playerT.position = new Vector3(_playerT.position.x, _groundLevel, _playerT.position.z);
                 }
                     
+            }
+
+            else
+            {
+                if (Mathf.Abs(_yVelocity) > _jumpTreshold)
+                {
+                    _playerAnimator.StartAnimation(_playerView._spriteRenderer, AnimState.Jump, true, _animationSpeed);
+                }
+                _yVelocity += _g * Time.deltaTime;
+                _playerT.position += Vector3.up * (Time.deltaTime * _yVelocity);
             }
         }
     }
