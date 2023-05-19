@@ -19,8 +19,8 @@ namespace PlatformerMVC
         private float _xAxisInput;
         private bool _isJump;
 
-        private float _walkSpeed = 200f;
-        private float _animationSpeed = 10f;
+        private float _walkSpeed = 250f;
+        private float _animationSpeed = 20f;
         private float _movingTreshold = 0.1f;
 
         private Vector3 _leftScale = new Vector3(-1, 1, 1);
