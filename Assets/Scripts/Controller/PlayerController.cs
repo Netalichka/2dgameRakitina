@@ -14,6 +14,7 @@ namespace PlatformerMVC
 
         private Transform _playerT;
         private Rigidbody2D _rb;
+        private int _health = 100;
 
 
         private float _xAxisInput;
@@ -39,7 +40,7 @@ namespace PlatformerMVC
 
 
 
-       public PlayerController(LevelObjectView player)
+       public PlayerController(InteractiveObjectView player)
         {
             _config = Resources.Load<AnimationConfig>("SpriteAnimatorCfg");
             _playerAnimator = new SpriteAnimatorController(_config);
@@ -48,8 +49,13 @@ namespace PlatformerMVC
             _playerView = player;
             _playerT = player._transform;
             _rb = player._rb;
+            player.TakeDamage += TakeBullet;
         }
 
+        public void TakeBullet(BulletView bullet)
+        {
+
+        }
         private void MoveTowards()
         {
             _xVelocity = Time.deltaTime * _walkSpeed * (_xAxisInput < 0 ? -1 : 1);
