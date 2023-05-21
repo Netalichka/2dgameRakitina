@@ -54,7 +54,7 @@ namespace PlatformerMVC
 
         public void TakeBullet(BulletView bullet)
         {
-
+            _health -= bullet.DamagePoint;
         }
         private void MoveTowards()
         {
@@ -72,6 +72,11 @@ namespace PlatformerMVC
         
         public void Update()
         {
+            if(_health <= 0)
+            {
+                _health = 0;
+                _playerView._spriteRenderer.enabled = false;
+            }
             _playerAnimator.Update();
             _contactPooler.Update();
             _xAxisInput = Input.GetAxis("Horizontal");
