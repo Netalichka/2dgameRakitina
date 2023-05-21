@@ -855,14 +855,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.2}
   m_ConnectedAnchor: {x: 0, y: -0.20999956}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &304457110
 Rigidbody2D:
   serializedVersion: 4
@@ -1289,14 +1289,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.58}
   m_ConnectedAnchor: {x: 0.025423408, y: -0.18000007}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &403744398
 Rigidbody2D:
   serializedVersion: 4
@@ -2039,14 +2039,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.27}
   m_ConnectedAnchor: {x: 0, y: -0.12000036}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &563156771
 Rigidbody2D:
   serializedVersion: 4
@@ -3850,14 +3850,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.27}
   m_ConnectedAnchor: {x: 0, y: -0.12000036}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &1587394238
 Rigidbody2D:
   serializedVersion: 4
@@ -3981,14 +3981,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.27}
   m_ConnectedAnchor: {x: 0, y: -0.12000036}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &1595595005
 Rigidbody2D:
   serializedVersion: 4
@@ -4269,14 +4269,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.2}
   m_ConnectedAnchor: {x: 0, y: -0.18999958}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &1820433337
 Rigidbody2D:
   serializedVersion: 4
@@ -4591,20 +4591,20 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1899517938}
+  m_ConnectedRigidBody: {fileID: 1820433337}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.27}
-  m_ConnectedAnchor: {x: 0, y: 0.26999998}
-  m_UseMotor: 0
+  m_ConnectedAnchor: {x: 0, y: -0.12000036}
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &1899517938
 Rigidbody2D:
   serializedVersion: 4
@@ -4812,14 +4812,14 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.2}
   m_ConnectedAnchor: {x: 0, y: -0.24999976}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 40
+    m_UpperAngle: -40
 --- !u!50 &2060907680
 Rigidbody2D:
   serializedVersion: 4
