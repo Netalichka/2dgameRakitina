@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[SerializeField]
-
-public struct AIConfig 
+namespace PlatformerMVC
 {
-    public float Speed;
-    public float MinDistanceToTarget;
-    public Transform[] WayPoints;
+
+
+
+    [SerializeField]
+
+    public struct AIConfig
+    {
+        public float Speed;
+        public float MinDistanceToTarget;
+        public Transform[] WayPoints;
+    }
 }
