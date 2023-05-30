@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace PlatformerMVC
 {
@@ -19,7 +20,7 @@ namespace PlatformerMVC
         private PlayerController _playerController;
         private CannonController _cannonController;
         private EmitterController _emitterController;
-        private SimplePatrolAI _simplePatrolAI;
+        //private SimplePatrolAI _simplePatrolAI;
 
         // private AnimationConfig _config; 
         //private SpriteAnimatorController _playerAnimator;
@@ -29,7 +30,7 @@ namespace PlatformerMVC
             _playerController = new PlayerController(_playerView);
             _cannonController = new CannonController(_cannonView._muzzleT, _playerView._transform);
             _emitterController = new EmitterController(_cannonView._bullets, _cannonView._emitterT);
-            _simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
+            //_simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
 
             // _config = Resources.Load<AnimationConfig>("SpriteAnimatorCfg");
             //_playerAnimator = new SpriteAnimatorController(_config);
