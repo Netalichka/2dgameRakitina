@@ -20,6 +20,7 @@ namespace PlatformerMVC
         private PlayerController _playerController;
         private CannonController _cannonController;
         private EmitterController _emitterController;
+        private CameraController _cameraController;
         //private SimplePatrolAI _simplePatrolAI;
 
         // private AnimationConfig _config; 
@@ -30,6 +31,7 @@ namespace PlatformerMVC
             _playerController = new PlayerController(_playerView);
             _cannonController = new CannonController(_cannonView._muzzleT, _playerView._transform);
             _emitterController = new EmitterController(_cannonView._bullets, _cannonView._emitterT);
+            _cameraController = new CameraController(_playerView, Camera.main.transform);
             //_simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
 
             // _config = Resources.Load<AnimationConfig>("SpriteAnimatorCfg");
@@ -42,6 +44,7 @@ namespace PlatformerMVC
             _playerController.Update();
             _cannonController.Update();
             _emitterController.Update();
+            _cameraController.Update();
             //_playerAnimator.Update();
         }
     }
