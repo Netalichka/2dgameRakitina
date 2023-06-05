@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class QuestCoinModel : MonoBehaviour
+namespace PlatformerMVC
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public class QuestCoinModel : IQuestModel
     {
-        
+        public bool TryComplete(GameObject actor)
+        {
+            return actor.CompareTag("QuestCoin");
+        }
     }
 }

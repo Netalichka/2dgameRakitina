@@ -2274,8 +2274,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303282450}
-  - component: {fileID: 303282449}
   - component: {fileID: 303282451}
+  - component: {fileID: 303282452}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -2283,21 +2283,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &303282449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303282448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a3280d09ffadf459e6f2cded5fe510, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerView: {fileID: 253676045}
-  _cannonView: {fileID: 61738884}
-  _enemyView: {fileID: 1918321014}
 --- !u!4 &303282450
 Transform:
   m_ObjectHideFlags: 0
@@ -2400,6 +2385,22 @@ MonoBehaviour:
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
   showGraphs: 1
+--- !u!114 &303282452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303282448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a3280d09ffadf459e6f2cded5fe510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerView: {fileID: 253676045}
+  _cannonView: {fileID: 61738884}
+  _singleQuestItem: {fileID: 1367670002}
+  _enemyView: {fileID: 1918321014}
 --- !u!1 &304457106
 GameObject:
   m_ObjectHideFlags: 0

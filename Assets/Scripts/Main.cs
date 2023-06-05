@@ -13,6 +13,7 @@ namespace PlatformerMVC
         [SerializeField] private CanonView _cannonView;
 
         [SerializeField] private QuestObjectView _singleQuestItem;
+
         [SerializeField]
          private AIConfig _config;
 
