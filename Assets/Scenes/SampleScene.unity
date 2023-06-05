@@ -5598,6 +5598,7 @@ GameObject:
   - component: {fileID: 1367670003}
   - component: {fileID: 1367670002}
   - component: {fileID: 1367670001}
+  - component: {fileID: 1367670005}
   m_Layer: 0
   m_Name: Coin
   m_TagString: QuestCoin
@@ -5636,9 +5637,9 @@ MonoBehaviour:
   _transform: {fileID: 1367670004}
   _spriteRenderer: {fileID: 1367670003}
   _collider: {fileID: 1367670001}
-  _rb: {fileID: 0}
-  _completedColor: {r: 0.052954797, g: 0.6603774, b: 0.21104729, a: 0}
-  _defaultColor: {r: 0.08076259, g: 0.062566735, b: 0.6981132, a: 0}
+  _rb: {fileID: 1367670005}
+  _completedColor: {r: 0.052954797, g: 0.6603774, b: 0.21104729, a: 0.39215687}
+  _defaultColor: {r: 0.6747136, g: 0.69803923, b: 0.06274509, a: 0.39215687}
 --- !u!212 &1367670003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5699,13 +5700,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367670000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.51, y: -0.86, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.25, y: 2.85, z: 0}
+  m_LocalScale: {x: 1.5294, y: 1.6617, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1367670005
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367670000}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1420455686
 GameObject:
   m_ObjectHideFlags: 0
@@ -7131,7 +7153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1918321012
 SpriteRenderer:
   m_ObjectHideFlags: 0
